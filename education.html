@@ -3,41 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Education</title>
-  <link rel="stylesheet" href="index.css">
+  <title>Education — Gowtham Reddy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
-  <header class="header-nav">
+  <header class="sidebar-nav">
     <nav class="navbar">
-      <a href="index.html" class="nav-icon" data-name="Home"><i class="fas fa-home"></i></a>
-      <a href="about.html" class="nav-icon" data-name="About"><i class="fas fa-user"></i></a>
-      <a href="skills.html" class="nav-icon" data-name="Skills"><i class="fas fa-code"></i></a>
-      <a href="internships.html" class="nav-icon" data-name="Certifications & Internships"><i class="fas fa-certificate"></i></a>
-      <a href="education.html" class="nav-icon active" data-name="Education"><i class="fas fa-graduation-cap"></i></a>
-      <a href="contact.html" class="nav-icon" data-name="Contact"><i class="fas fa-envelope"></i></a>
+      <a href="index.html#home" class="nav-icon" data-name="Home"><i class="fas fa-home"></i></a>
+      <a href="index.html#about" class="nav-icon" data-name="About"><i class="fas fa-user"></i></a>
+      <a href="index.html#skills" class="nav-icon" data-name="Skills"><i class="fas fa-code"></i></a>
+      <a href="index.html#certifications" class="nav-icon" data-name="Certifications"><i class="fas fa-certificate"></i></a>
+      <a href="index.html#education" class="nav-icon active" data-name="Education"><i class="fas fa-graduation-cap"></i></a>
+      <a href="index.html#contact" class="nav-icon" data-name="Contact"><i class="fas fa-envelope"></i></a>
     </nav>
   </header>
 
-  <div class="page-container" id="education">
-    <h2>Education Details</h2>
-    <div class="card-content" style="text-align: left;">
-      <div style="margin-bottom: 20px;">
-        <h3 style="color: var(--accent-color);">Bachelor of Technology in Computer Science and Engineering</h3>
-        <p>Sir Padampat Singhania University | 2021 - 2025</p>
-        <p>Specialization in Cloud Computing & Information Security.</p>
-      </div>
-      <div>
-        <h3 style="color: var(--accent-color);">Higher Secondary School</h3>
-        <p>Narayana Junior College | 2019 - 2021</p>
-      </div>
-      <div>
-        <h3 style="color: var(--accent-color);">Secondary School</h3>
-        <p>Hope E.M High School | 2019</p>
+  <main class="standalone-section">
+    <div class="section-inner">
+      <h2 class="section-title">Education</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-date">2021 — 2025</div>
+            <div class="timeline-title">Bachelor of Technology in Computer Science &amp; Engineering</div>
+            <div class="timeline-sub">Sir Padampat Singhania University — Specialization in Cloud Computing &amp; Information Security</div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-date">2019 — 2021</div>
+            <div class="timeline-title">Higher Secondary School</div>
+            <div class="timeline-sub">Narayana Junior College</div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-date">2019</div>
+            <div class="timeline-title">Secondary School</div>
+            <div class="timeline-sub">Hope E.M High School</div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Thotamadugula Gowtham Reddy. All Rights Reserved.</p>
+  </footer>
 
   <script src="index.js"></script>
 </body>

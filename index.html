@@ -3,167 +3,250 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home - Thotamadugula Gowtham Reddy</title>
-  <link rel="stylesheet" href="index.css">
+  <title>Gowtham Reddy | DevOps &amp; Cloud Engineer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
-  <!-- ===== HEADER NAVIGATION ===== -->
-  <header class="header-nav">
+  <!-- ===== SIDEBAR NAVIGATION ===== -->
+  <header class="sidebar-nav">
     <nav class="navbar">
-      <a href="index.html" class="nav-icon" data-name="Home"><i class="fas fa-home"></i></a> 
-      <a href="about.html" class="nav-icon" data-name="About"><i class="fas fa-user"></i></a>
-      <a href="skills.html" class="nav-icon" data-name="Skills"><i class="fas fa-code"></i></a>
-      <a href="internships.html" class="nav-icon" data-name="Certifications & Internships"><i class="fas fa-certificate"></i></a>
-      <a href="education.html" class="nav-icon" data-name="Education"><i class="fas fa-graduation-cap"></i></a>
-      <a href="contact.html" class="nav-icon" data-name="Contact"><i class="fas fa-envelope"></i></a>
+      <a href="#home" class="nav-icon active" data-name="Home"><i class="fas fa-home"></i></a>
+      <a href="#about" class="nav-icon" data-name="About"><i class="fas fa-user"></i></a>
+      <a href="#skills" class="nav-icon" data-name="Skills"><i class="fas fa-code"></i></a>
+      <a href="#certifications" class="nav-icon" data-name="Certifications"><i class="fas fa-certificate"></i></a>
+      <a href="#education" class="nav-icon" data-name="Education"><i class="fas fa-graduation-cap"></i></a>
+      <a href="#contact" class="nav-icon" data-name="Contact"><i class="fas fa-envelope"></i></a>
     </nav>
   </header>
 
-  <!-- ===== HOME SECTION ===== -->
-  <div class="page-container" id="home">
-    <section class="landing-content">
-      <div class="photo-container">
-        <img src="assests/my_pic.jpg" alt="Thotamadugula Gowtham Reddy Portfolio Photo">
+  <!-- ===== SECTION 1: HERO ===== -->
+  <section class="section" id="home">
+    <div id="particles-container"></div>
+    <div class="hero-content">
+      <div class="hero-photo">
+        <img src="assests/my_pic.jpg" alt="Gowtham Reddy Thotamadugula">
       </div>
-
-      <div class="intro-text">
-        <h1>Hello, I'm <span style="color: var(--accent-color);">Gowtham Reddy Thotamadugula</span></h1>
-        <div class="dynamic-text-container">
-          <span id="typing-text"></span>
+      <div class="hero-text">
+        <h1>Hello, I'm<br><span>Gowtham Reddy</span></h1>
+        <div class="typewriter-container">
+          <span id="typewriter-text"></span><span class="cursor">|</span>
         </div>
-
-        <p class="intro-description">
-          I am a <strong>DevOps & Cloud Engineer</strong> with strong foundations in <strong>Python Full-Stack Development</strong> and scalable deployments.  
-          My passion lies in building reliable and automated systems using <strong>AWS, Docker, Kubernetes</strong> and continuous integration pipelines.
-        </p>
-
-        <a href="skills.html" class="download-btn" style="background: var(--primary-color); color: var(--text-light); margin-top: 25px;">
-          View My Skills & Projects <i class="fas fa-arrow-right"></i>
-        </a>
-      </div>
-    </section>
-  </div>
-
-  <!-- ===== ABOUT SECTION ===== -->
-  <div class="page-container" id="about">
-    <h2>About Me <span>(Thotamadugula Gowtham Reddy)</span></h2>
-    <div class="card-content">
-  <p>
-    I am <strong>Thotamadugula Gowtham Reddy</strong>, a dedicated <strong>DevOps and Cloud Engineer</strong> 
-    with a solid foundation in <strong>Python Full-Stack Development</strong>. My work focuses on designing and 
-    automating cloud-based infrastructures that are secure, scalable, and reliable. I aim to bridge the gap between 
-    development and operations by applying modern DevOps methodologies that enhance efficiency and deployment speed.
-  </p>
-
-  <p>
-    I have hands-on experience in <strong>Cloud Computing, Infrastructure as Code (IaC), and CI/CD pipeline automation</strong> 
-    using <strong>AWS, Docker, Kubernetes, Jenkins, and GitHub Actions</strong>. My expertise also extends to 
-    <strong>Django</strong> and <strong>RESTful API</strong> development, enabling me to deliver end-to-end solutions 
-    that combine robust backend systems with streamlined deployment workflows.
-  </p>
-
-  <p>
-    My professional background also includes work as a <strong>Salesforce Developer and Administrator</strong>, 
-    where I developed <strong>Apex classes, Visualforce pages, Lightning Components</strong>, and workflow automations 
-    to improve business processes. This diverse technical exposure allows me to contribute effectively across 
-    different stages of software delivery and cloud infrastructure management.
-  </p>
-
-  <p>
-    I am passionate about continuous learning, automation, and innovation. My goal is to design intelligent and 
-    self-healing cloud systems that enhance scalability and operational excellence. I believe in collaborative problem-solving 
-    and strive to apply technology responsibly to create meaningful, efficient, and sustainable digital solutions.
-  </p>
-</div>
-
-  </div>
-
-  <!-- ===== SKILLS SECTION ===== -->
-  <div class="page-container" id="skills">
-    <h2>My Skills &  Projects</h2>
-    <div class="skills-wrapper"> 
-      <div class="skills-grid">
-          <div class="skill-card" data-skill="python"><i class="fab fa-python"></i> Python / Django ↓</div>
-            <div class="skill-card" data-skill="front_end"><i class="fas fa-laptop-code"></i> Front-End ↓</div>
-            <div class="skill-card" data-skill="salesforce"><i class="fas fa-cloud"></i> Salesforce ↓</div>
-            <div class="skill-card" data-skill="cloud"><i class="fab fa-aws"></i> DevOps / Cloud ↓</div>
-            <div class="skill-card" data-skill="database"><i class="fas fa-database"></i> Oracle SQL / MySQL ↓</div>
-
+        <p class="hero-tagline">DevOps &amp; Cloud Engineer building scalable, automated, and secure cloud infrastructures. Passionate about bridging development and operations.</p>
+        <div class="hero-btns">
+          <a href="#skills" class="btn-primary">View My Work <i class="fas fa-arrow-right"></i></a>
+          <a href="#contact" class="btn-outline">Contact Me</a>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <!-- ===== CERTIFICATIONS & INTERNSHIPS SECTION ===== -->
-  <div class="page-container" id="certifications">
-    <h2>Certifications & Internships</h2>
-    <div class="card-content">
-      <div class="two-col">
-        <div>
-          <h3>Certifications</h3>
-          <ul>
-            <li><a href="https://www.coursera.org/account/accomplishments/verify/W384PNZ4YCTQ" target="_blank">IBM Cloud — Coursera</a></li>
-            <li><a href="https://www.coursera.org/account/accomplishments/verify/EDRPDFWD83GL" target="_blank">Front-End Development — Coursera</a></li>
-            <li><a href="https://www.coursera.org/account/accomplishments/verify/GHPGDFP2CJCG" target="_blank">Python for Everyone — Coursera</a></li>
-          </ul>
+  <!-- ===== SECTION 2: ABOUT ===== -->
+  <section class="section" id="about">
+    <div class="section-inner">
+      <h2 class="section-title reveal">About Me</h2>
+      <div class="about-grid reveal">
+        <div class="card">
+          <p>I am <strong>Thotamadugula Gowtham Reddy</strong>, a dedicated <strong>DevOps and Cloud Engineer</strong> with a solid foundation in <strong>Python Full-Stack Development</strong>. My work focuses on designing and automating cloud-based infrastructures that are secure, scalable, and reliable. I aim to bridge the gap between development and operations by applying modern DevOps methodologies that enhance efficiency and deployment speed.</p>
+          <p style="margin-top:16px;">I have hands-on experience in <strong>Cloud Computing, Infrastructure as Code (IaC), and CI/CD pipeline automation</strong> using <strong>AWS, Docker, Kubernetes, Jenkins, and GitHub Actions</strong>. My expertise also extends to <strong>Django</strong> and <strong>RESTful API</strong> development, enabling me to deliver end-to-end solutions that combine robust backend systems with streamlined deployment workflows.</p>
         </div>
-        <div>
-          <h3>Internships</h3>
-          <ul>
-            <li>Cloud Deployment Intern — CI/CD Automation</li>
-            <li>Logistics ERP System — Django Project</li>
-          </ul>
+        <div class="card">
+          <p>My professional background also includes work as a <strong>Salesforce Developer and Administrator</strong>, where I developed <strong>Apex classes, Visualforce pages, Lightning Components</strong>, and workflow automations to improve business processes. This diverse technical exposure allows me to contribute effectively across different stages of software delivery and cloud infrastructure management.</p>
+          <p style="margin-top:16px;">I am passionate about continuous learning, automation, and innovation. My goal is to design intelligent and self-healing cloud systems that enhance scalability and operational excellence. I believe in collaborative problem-solving and strive to apply technology responsibly to create meaningful, efficient, and sustainable digital solutions.</p>
+          <div class="tech-badges">
+            <span class="badge">AWS</span>
+            <span class="badge">Docker</span>
+            <span class="badge">Kubernetes</span>
+            <span class="badge">Jenkins</span>
+            <span class="badge">GitHub Actions</span>
+            <span class="badge">Django</span>
+            <span class="badge">Python</span>
+            <span class="badge">Salesforce</span>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <!-- ===== EDUCATION SECTION ===== -->
-  <div class="page-container" id="education">
-    <h2>Education Details</h2>
-    <div class="card-content" style="text-align: left;">
-      <div style="margin-bottom: 20px;">
-        <h3 style="color: var(--accent-color);">Bachelor of Technology in Computer Science and Engineering</h3>
-        <p>Sir Padampat Singhania University | 2021 - 2025</p>
-        <p>Specialization in Cloud Computing & Information Security.</p>
-      </div>
-      <div>
-        <h3 style="color: var(--accent-color);">Higher Secondary School</h3>
-        <p>Narayana Junior College | 2019 - 2021</p>
-      </div>
-      <div>
-        <h3 style="color: var(--accent-color);">Secondary School</h3>
-        <p>Hope E.M High School | 2019</p>
+  <!-- ===== SECTION 3: SKILLS ===== -->
+  <section class="section" id="skills">
+    <div class="section-inner">
+      <h2 class="section-title reveal">Skills &amp; Projects</h2>
+      <div class="skills-grid reveal">
+
+        <div class="skill-card" data-skill="python">
+          <div class="card-icon"><i class="fab fa-python"></i></div>
+          <h3>Python / Django <i class="fas fa-chevron-down skill-chevron"></i></h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Django</span>
+            <span class="skill-tag">REST API</span>
+            <span class="skill-tag">ML</span>
+          </div>
+          <div class="project-dropdown"></div>
+        </div>
+
+        <div class="skill-card" data-skill="front_end">
+          <div class="card-icon"><i class="fas fa-laptop-code"></i></div>
+          <h3>Front-End Development <i class="fas fa-chevron-down skill-chevron"></i></h3>
+          <div class="skill-tags">
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Chart.js</span>
+          </div>
+          <div class="project-dropdown"></div>
+        </div>
+
+        <div class="skill-card" data-skill="salesforce">
+          <div class="card-icon"><i class="fas fa-cloud"></i></div>
+          <h3>Salesforce <i class="fas fa-chevron-down skill-chevron"></i></h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Apex</span>
+            <span class="skill-tag">Visualforce</span>
+            <span class="skill-tag">Lightning</span>
+            <span class="skill-tag">CRM</span>
+          </div>
+          <div class="project-dropdown"></div>
+        </div>
+
+        <div class="skill-card" data-skill="cloud">
+          <div class="card-icon"><i class="fab fa-aws"></i></div>
+          <h3>DevOps / Cloud <i class="fas fa-chevron-down skill-chevron"></i></h3>
+          <div class="skill-tags">
+            <span class="skill-tag">AWS</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Kubernetes</span>
+            <span class="skill-tag">Jenkins</span>
+            <span class="skill-tag">CI/CD</span>
+          </div>
+          <div class="project-dropdown"></div>
+        </div>
+
+        <div class="skill-card" data-skill="database">
+          <div class="card-icon"><i class="fas fa-database"></i></div>
+          <h3>Oracle SQL / MySQL <i class="fas fa-chevron-down skill-chevron"></i></h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Oracle SQL</span>
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">Stored Procedures</span>
+          </div>
+          <div class="project-dropdown"></div>
+        </div>
+
       </div>
     </div>
-  </div>
+  </section>
 
-  <!-- ===== CONTACT SECTION ===== -->
-  <div class="page-container" id="contact">
-    <h2>Contact Me & Resume</h2>
-    <div class="card-content">
-      <p>I am currently open to new opportunities. Let's connect!</p>
-      <div class="contact-links" style="margin-top: 25px; display: flex; flex-direction: column; gap: 15px; align-items: center;">
-        <a href="mailto:thotamadugula.gowtham@gmail.com" class="download-btn" style="background: var(--primary-color);">
+  <!-- ===== SECTION 4: CERTIFICATIONS & INTERNSHIPS ===== -->
+  <section class="section" id="certifications">
+    <div class="section-inner">
+      <h2 class="section-title reveal">Certifications &amp; Internships</h2>
+      <div class="cert-grid reveal">
+        <div class="card">
+          <h3 class="cert-card-title"><i class="fas fa-certificate" style="margin-right:10px;"></i>Certifications</h3>
+          <div class="cert-item">
+            <i class="fas fa-check-circle item-icon"></i>
+            <div>
+              <a href="https://www.coursera.org/account/accomplishments/verify/W384PNZ4YCTQ" target="_blank" rel="noopener noreferrer">IBM Cloud — Coursera</a>
+              <span>Cloud Computing Fundamentals</span>
+            </div>
+          </div>
+          <div class="cert-item">
+            <i class="fas fa-check-circle item-icon"></i>
+            <div>
+              <a href="https://www.coursera.org/account/accomplishments/verify/EDRPDFWD83GL" target="_blank" rel="noopener noreferrer">Front-End Development — Coursera</a>
+              <span>HTML, CSS, JavaScript</span>
+            </div>
+          </div>
+          <div class="cert-item">
+            <i class="fas fa-check-circle item-icon"></i>
+            <div>
+              <a href="https://www.coursera.org/account/accomplishments/verify/GHPGDFP2CJCG" target="_blank" rel="noopener noreferrer">Python for Everyone — Coursera</a>
+              <span>Python Programming</span>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <h3 class="cert-card-title"><i class="fas fa-briefcase" style="margin-right:10px;"></i>Internships</h3>
+          <div class="intern-item">
+            <i class="fas fa-laptop-code item-icon"></i>
+            <div>
+              <span class="intern-title">Cloud Deployment Intern</span>
+              <span>CI/CD Automation — Jenkins, Docker, AWS pipelines</span>
+            </div>
+          </div>
+          <div class="intern-item">
+            <i class="fas fa-server item-icon"></i>
+            <div>
+              <span class="intern-title">Logistics ERP System</span>
+              <span>Django-based ERP project — shipment tracking &amp; database synchronization</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 5: EDUCATION ===== -->
+  <section class="section" id="education">
+    <div class="section-inner">
+      <h2 class="section-title reveal">Education</h2>
+      <div class="timeline reveal">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-date">2021 — 2025</div>
+            <div class="timeline-title">Bachelor of Technology in Computer Science &amp; Engineering</div>
+            <div class="timeline-sub">Sir Padampat Singhania University — Specialization in Cloud Computing &amp; Information Security</div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-date">2019 — 2021</div>
+            <div class="timeline-title">Higher Secondary School</div>
+            <div class="timeline-sub">Narayana Junior College</div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-date">2019</div>
+            <div class="timeline-title">Secondary School</div>
+            <div class="timeline-sub">Hope E.M High School</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 6: CONTACT ===== -->
+  <section class="section" id="contact">
+    <div class="section-inner" style="text-align:center;">
+      <h2 class="section-title reveal" style="display:inline-block;">Contact Me</h2>
+      <div class="contact-wrapper reveal">
+        <p class="contact-tagline">I'm currently open to new opportunities. Whether you have a question, a project idea, or just want to say hello — my inbox is always open!</p>
+        <a href="mailto:thotamadugula.gowtham@gmail.com" class="contact-btn primary">
           <i class="fas fa-envelope"></i> Email Me
         </a>
-        <a href="assests/gowtham.resume.pdf (1).pdf" download="Gowtham_Reddy_Resume" class="download-btn">
-          <i class="fas fa-download"></i> Download My Resume (PDF)
+        <a href="assests/gowtham.resume.pdf (1).pdf" download="Gowtham_Reddy_Resume" class="contact-btn secondary">
+          <i class="fas fa-download"></i> Download Resume
         </a>
-        <a href="https://linkedin.com/in/gowthamreddyt" target="_blank" class="download-btn" style="background: var(--card-bg); border: 1px solid #444;">
+        <a href="https://linkedin.com/in/gowthamreddyt" target="_blank" rel="noopener noreferrer" class="contact-btn dark">
           <i class="fab fa-linkedin"></i> View LinkedIn
         </a>
-        <a href="https://github.com/GowthamReddyT" target="_blank" class="download-btn" style="background: var(--card-bg); border: 1px solid #444;">
+        <a href="https://github.com/GowthamReddyT" target="_blank" rel="noopener noreferrer" class="contact-btn dark">
           <i class="fab fa-github"></i> View GitHub
         </a>
       </div>
     </div>
-  </div>
+  </section>
 
-  <footer style="text-align:center; margin:40px 0; color:#aaa;">
-    <p>© 2025 THOTAMADUGULA GOWTHAM REDDY. All Rights Reserved.</p>
+  <footer>
+    <p>© 2025 Thotamadugula Gowtham Reddy. All Rights Reserved.</p>
   </footer>
 
   <script src="index.js"></script>
